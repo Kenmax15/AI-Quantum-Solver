@@ -4,12 +4,12 @@ import requests
 st.set_page_config(page_title="AI Quantum Solver", layout="centered")
 
 st.title("AI Quantum Solver")
-st.write("Predict the ground-state energy E0 of a disordered XXZ chain.")
+st.write("Predict the ground-state energy E0 of a disordered XXZ Heisenberg spin-1/2  chain.")
 
 st.subheader("Model parameters")
-Jxy = st.number_input("Jxy", value=1.0)
-Jz = st.number_input("Jz", value=1.2)
-W = st.number_input("W", value=3.0)
+Jxy = st.number_input("J(transverse spin-spin exchange)", value=1.0)
+Jz = st.number_input("Jz(Longitudinal spin-spin exchange)", value=1.2)
+W = st.number_input("W(disorder strength)", value=3.0)
 
 st.subheader("Disorder fields h_i")
 default_h = "0.5, -1.2, 0.8, -0.3, 1.1, -0.7, 0.4, -0.9, 0.2, 0.6, -0.5, 1.0"
@@ -20,7 +20,7 @@ if st.button("Predict E0"):
         h = [float(x.strip()) for x in h_text.split(",") if x.strip() != ""]
 
         payload = {
-            "Jxy": Jxy,
+            "J": Jxy,
             "Jz": Jz,
             "W": W,
             "h": h
