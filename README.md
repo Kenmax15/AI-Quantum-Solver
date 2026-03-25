@@ -27,7 +27,7 @@ $$
 
 * Spin-1/2 chain
 * Random onsite disorder $( h_i \in [-W, W] )$
-* Fixed magnetization sector $( K_{\uparrow} )$
+* Fixed magnetization sector $K_{\uparrow}$
 
 Exact diagonalization is performed in **symmetry-reduced Hilbert spaces**, enabling efficient dataset generation.
 
@@ -45,12 +45,12 @@ Predict physical observables from disorder realizations:
 
 ### Targets
 
-* Ground-state energy ( E_0 )
-* Spectral gap ( \Delta = E_1 - E_0 )
+* Ground-state energy $E_0$
+* Spectral gap $\Delta = E_1 - E_0$
 
 ### Key Result
 
-* $( R^2 \approx 0.96 )$ for $E_0$
+* $R^2 \approx 0.96$ for $E_0$
 * Gap prediction is significantly harder → reflects underlying many-body complexity
 
 ---
@@ -59,7 +59,7 @@ Predict physical observables from disorder realizations:
 
 The model learns **global disorder statistics** rather than site-specific values:
 
-* $( |h|_{\text{mean}} )$
+* $|h|_{\text{mean}}$
 * variance
 * standard deviation
 
