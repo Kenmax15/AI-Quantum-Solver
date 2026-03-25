@@ -22,11 +22,11 @@ The workflow combines:
 We consider the disordered XXZ Hamiltonian:
 
 $$
-H = \sum_i \left( J (S_i^x S_{i+1}^x + S_i^y S_{i+1}^y) + J_z S_i^z S_{i+1}^z \right) + \sum_i h_i S_i^z
+H = \sum_{j=1}^{K} \left( J (S_j^x S_{j+1}^x + S_j^y S_{j+1}^y) + J_z S_j^z S_{j+1}^z \right) + \sum_{j=1}^{K} h_{j} S_{j}^z
 $$
 
-* Spin-$1/2$ chain
-* Random onsite disorder $h_i \in [-W, W]$
+* Spin-1/2 chain
+* Random onsite disorder $h_{j} \in [-W, W]$
 * Fixed magnetization sector $K_{\uparrow}$
 
 Exact diagonalization is performed in **symmetry-reduced Hilbert spaces**, enabling efficient dataset generation.
