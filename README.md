@@ -50,7 +50,7 @@ Predict physical observables from disorder realizations:
 
 ### Key Result
 
-* ( R^2 \approx 0.96 ) for ( E_0 )
+* $( R^2 \approx 0.96 )$ for $E_0$
 * Gap prediction is significantly harder → reflects underlying many-body complexity
 
 ---
@@ -59,7 +59,7 @@ Predict physical observables from disorder realizations:
 
 The model learns **global disorder statistics** rather than site-specific values:
 
-* ( |h|_{\text{mean}} )
+* $( |h|_{\text{mean}} )$
 * variance
 * standard deviation
 
@@ -102,14 +102,14 @@ Docker (Deployment)
 
 * Features:
 
-  * Disorder fields (h_i)
+  * Disorder fields $h_i$
   * Statistical descriptors (mean, std, variance)
 * Models:
 
   * Random Forest (baseline)
 * Targets:
 
-  * (E_0)
+  * $E_0$
   * Gap
 
 ---
@@ -216,7 +216,7 @@ POST /predict
 
 | Quantity | Model Performance                 |
 | -------- | --------------------------------- |
-| ( E_0 )  | Excellent (R² ≈ 0.96)             |
+| $E_0$  | Excellent $R² ≈ 0.96$            |
 | Gap      | Difficult (non-trivial structure) |
 
 ---
