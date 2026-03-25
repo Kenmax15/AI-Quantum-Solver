@@ -87,7 +87,6 @@ Docker (Deployment)
 
 ---
 ## ⚙️ Components
-## ⚙️ Components
 
 ### 1. 🔬 Exact Solver (C)
 
