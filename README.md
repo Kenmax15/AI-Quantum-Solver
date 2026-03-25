@@ -6,11 +6,11 @@ This project presents a **physics-informed machine learning pipeline** for predi
 
 The workflow combines:
 
-* Exact diagonalization (C)
+* Exact diagonalization (C program)
 * Data generation from first principles
 * Machine learning regression (Python)
 * API deployment (FastAPI)
-* Interactive UI (Streamlit)
+* Interactive User Interface (Streamlit)
 * Containerized deployment (Docker & Docker Compose)
 
 👉 The goal is to **replace expensive exact diagonalization with fast ML inference**.
@@ -25,23 +25,18 @@ $$
 H = \sum_i \left( J (S_i^x S_{i+1}^x + S_i^y S_{i+1}^y) + J_z S_i^z S_{i+1}^z \right) + \sum_i h_i S_i^z
 $$
 
-* Spin-1/2 chain
-* Random onsite disorder $( h_i \in [-W, W] )$
+* Spin-$1/2$ chain
+* Random onsite disorder $h_i \in [-W, W]$
 * Fixed magnetization sector $K_{\uparrow}$
 
 Exact diagonalization is performed in **symmetry-reduced Hilbert spaces**, enabling efficient dataset generation.
 
 ---
-## 🧠 Key Idea
+## 🧠 Key Idea and Machine Learning Objective
 
 Instead of solving the Hamiltonian every time:
 
-> 💥 Train a machine learning model to predict physical observables directly from system parameters.
-
----
-## 🧠 Machine Learning Objective
-
-Predict physical observables from disorder realizations:
+> 💥 Train a machine learning model to predict physical observables directly from Hamiltonian/system parameters.
 
 ### Targets
 
